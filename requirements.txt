@@ -27,7 +27,7 @@ h5py==3.8.0
 idna==3.4
 imutils==0.5.4
 ipykernel==6.16.2
-ipython==7.38.0
+ipython==7.34.0
 itsdangerous==2.1.2
 jax==0.4.6
 jedi==0.18.2
