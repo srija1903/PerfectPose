@@ -16,6 +16,7 @@ distlib==0.3.6
 executing==1.2.0
 filelock==3.12.0
 Flask==2.2.3
+Flask-Cors==3.0.10
 flatbuffers==23.3.3
 fonttools==4.38.0
 gast==0.4.0
