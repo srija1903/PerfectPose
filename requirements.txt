@@ -17,7 +17,7 @@ executing==1.2.0
 filelock==3.12.0
 Flask==2.2.3
 flatbuffers==23.3.3
-fonttools==4.39.0
+fonttools==4.38.0
 gast==0.4.0
 google-auth==2.16.2
 google-auth-oauthlib==0.4.6
