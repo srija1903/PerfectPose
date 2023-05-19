@@ -1,4 +1,5 @@
 from flask import Flask,render_template,request,send_file,send_from_directory,jsonify
+from flask_cors import CORS, cross_origin
 import pickle
 import numpy as np
 # Importing the pickle file of the knn classified dataset
@@ -8,8 +9,11 @@ model = pickle.load(open('exercises.pkl','rb+'))
 # keypoints = model.values()
 # Assigning the Flask  API to app
 app = Flask(__name__,template_folder='public')
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 # Creating a route for the pose detection page
 @app.route("/detect",methods=['POST','GET'])
+@cross_origin()
 def main():
     if(request.method == 'POST'):
         inputs = [x for x in request.form.values()]
